@@ -32,7 +32,7 @@
 
         initializeMapAtLocation(new naver.maps.LatLng(35.2234, 126.8417)); // 기본 위치를 (0, 0)으로 설정
 
-        const robotId = 'ecobot00011'; // 이 로봇 ID는 실제 사용하는 로봇 ID로 변경해야 합니다.
+        const robotId = 'ecobot00008'; // 이 로봇 ID는 실제 사용하는 로봇 ID로 변경해야 합니다.
         fetchTracks(robotId); // 로봇 ID를 인자로 전달
 
         ws_00008_tracking_map = new WebSocket(`ws://125.136.64.124:24104/${robotId}`);

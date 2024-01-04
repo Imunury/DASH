@@ -2,7 +2,7 @@
 
 (function () {
 
-    const robotId = "ecobot00011"
+    const robotId = "ecobot00008"
     const ecobot00011_mon_ws = new WebSocket(`ws://125.136.64.124:24104/${robotId}`);
 
     ecobot00011_mon_ws.onmessage = function (event) {
