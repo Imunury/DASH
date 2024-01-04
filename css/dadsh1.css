@@ -1,0 +1,201 @@
+html{
+    background-color: darkslategray;
+}
+
+.container {
+    width : 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom : 10px;
+}
+
+#container1 {
+
+}
+
+#container2 {
+}
+
+#container2_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#container2_left > .ecobot00011_box {
+    padding-right: 2rem;
+}
+
+#container3 {
+    height: 500px
+}
+
+.container_left{
+    width: 50%;
+    height : 100%;
+    border: solid cyan 2px;
+    margin : 3px;
+}
+
+.container_right{
+    width: 50%;
+    height : 100%;
+    border: solid cyan 2px;
+    margin : 3px;
+}
+
+#container1_info{
+    display : flex;
+    flex-direction : column;
+    align-items: flex-end;
+}
+
+/* 조종 버튼 */
+
+.ecobot00011_boxy {
+    margin: 10px; /* 박스 외부의 간격 */
+    padding: 0vh; /* 박스 내부의 간격 */
+  }
+
+#ecobot00011-man-ctrl {
+    position: absolute;
+    top: 18%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+}
+
+.ecobot00011_box {
+    display: flex;
+}
+
+.ecobot00011_t {
+    color: rgb(30, 126, 170);
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.ecobot00011_value {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(123, 240, 255);
+    margin: 0px;
+
+}
+
+#ecobot00011-control_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 20rem;
+    margin: 1rem auto;
+}
+
+#ecobot00011-man-ctrl .cross {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.4rem;  /* Adjusted to a relative value */
+}
+
+#ecobot00011-man-ctrl #ecobot00011-control_btn .cross button {
+    width: 100%;
+    height: 2.2rem;  /* Adjusted to a relative value */
+    padding: 0.6rem;  /* Adjusted to a relative value */
+    border-radius: 0.8rem;  /* Adjusted to a relative value */
+    border: none;
+    background-color: #444;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7rem;  /* Adjusted to a relative value */
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#ecobot00011-man-ctrl #ecobot00011-control_btn .cross button:active {
+    transform: scale(0.8);
+    background-color: white;
+    color: #000;
+}
+
+#ecobot00011-man-ctrl button:hover {
+    background-color: #555;
+    box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 1);
+}
+
+#ecobot00011_gps{
+    flex-direction : column;
+    justify-content: left;
+}
+
+/* 나침반 */
+
+.compass {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 0px solid #000;
+    /* position: absolute; */
+    /* top: 65%; */
+    /* left: 20%; */
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle at center, #FFF 0%, #EEE 0%, #000 80%);
+}
+
+.arrow {
+    width: 2%;
+    height: 40%;
+    position: absolute;
+    top: 10%;
+    left: 49%;
+    transform-origin: 50% 100%;
+}
+
+.bearing-arrow {
+    background-color: red;
+}
+
+.yaw-arrow {
+    background-color: blue;
+}
+
+.direction-label {
+    position: absolute;
+    font-size: 0.8rem;
+    font-family: Arial, sans-serif;
+    transform: translate(-50%, -50%);
+}
+
+.north { top: -10%; left: 50%; } 
+.east  { top: 50%; left: 110%; } 
+.south { top: 110%; left: 50%; } 
+.west  { top: 50%; left: -10%; }
+
+
+.container3_img{
+    height: 23vh;
+}
+
+
+/* map */
+#ecobot00011_map {
+    width: 20rem;
+    height: 20rem;
+}
+
+
+/* section2 */
+#water_quality_graph {
+    display: flex;
+    justify-content: flex-start;
+    margin-left : 10px;
+}
+
+.water_quality_graph_bar{
+    margin-bottom: 10px;
+}

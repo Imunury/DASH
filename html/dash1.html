@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="../css//dadsh1.css">
+    </head>
+    <body>
+
+        <div id="container1" class="container">
+
+            <div class="container_left">
+                <div>
+
+                </div>
+
+                <div class="ecobot00011_box" id="container1_info">
+                    <div>
+                        <p class="ecobot00011_value">태양열 충전</p>
+                        <p class="ecobot00011_value">정보</p>
+                    </div>
+                    <div class="ecobot00011_boxy">
+                        <span class="ecobot00011_t">충전 전력</span>
+                        <span class="ecobot00011_value"
+                            id="ecobot00011_solar_V">0.0</span>
+                    </div>
+                    <div class="ecobot00011_boxy">
+                        <span class="ecobot00011_t">충전 전류</span>
+                        <span class="ecobot00011_value"
+                            id="ecobot00011_solar_A">0.0</span>
+                    </div>
+                    <div class="ecobot00011_boxy">
+                        <span class="ecobot00011_t">배터리 온도</span>
+                        <span class="ecobot00011_value"
+                            id="ecobot00011_bat_Temp">0.0</span>
+                    </div>
+                    <div class="ecobot00011_boxy">
+                        <span class="ecobot00011_t">장치 온도</span>
+                        <span class="ecobot00011_value"
+                            id="ecobot00011_dev_Temp">0.0</span>
+                    </div>
+                    <div class="ecobot00011_boxy">
+                        <span class="ecobot00011_t">배터리 SOC</span>
+                        <span class="ecobot00011_value"
+                            id="ecobot00011_bat_Soc">0.0</span>
+                    </div>
+
+                    <div>
+                        <p class="ecobot00011_value">모드</p>
+                        <p class="ecobot00011_t">코스 운행</p>
+                        <span class="ecobot00011_t">코스 상태</span>
+                        <span class="ecobot00011_value"
+                            id="ecobot00011_bat_Soc">회전</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container_right">
+
+                <div class="ecobot00011_box">
+                    <div>
+                        <p class="ecobot00011_value">로봇</p>
+                        <p class="ecobot00011_value">제어</p>
+                    </div>
+                    <div>
+                        <div>
+                            <p class="ecobot00011_t">수동 제어</p>
+                        </div>
+                        <div class="ecobot00011_box">
+                            <div class="ecobot00011_boxy">
+                                <p class="ecobot00011_t">전진</p>
+                                <p class="ecobot00011_value"
+                                    id="ecobot00011_current_fwd_speed">0.0</p>
+                            </div>
+                            <div class="ecobot00011_boxy">
+                                <p class="ecobot00011_t">후진</p>
+                                <p class="ecobot00011_value"
+                                    id="ecobot00011_current_bwd_speed">0.0</p>
+                            </div>
+                            <div class="ecobot00011_boxy">
+                                <p class="ecobot00011_t">시프트</p>
+                                <p class="ecobot00011_value"
+                                    id="ecobot00011_current_shift_speed">0.0</p>
+                            </div>
+                            <div class="ecobot00011_boxy">
+                                <p class="ecobot00011_t">회전</p>
+                                <p class="ecobot00011_value"
+                                    id="ecobot00011_current_turn_speed">0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ecobot00011-man-ctrl">
+                    <div id="ecobot00011-control_btn">
+                        <div class="cross">
+                            <button id="left_turn"
+                                value="left_turn">좌회전</button>
+                            <button id="advance" value="forward">전진</button>
+                            <button id="right_turn"
+                                value="right_turn">우회전</button>
+                            <button id="left_shift"
+                                value="left_shift">좌시프트</button>
+                            <button id="stop" value="stop">정지</button>
+                            <button id="right_shift"
+                                value="right_shift">우시프트</button>
+                            <button id="left_turn"
+                                value="left_turn">좌회전</button>
+                            <button id="reverse" value="backward">후진</button>
+                            <button id="right_turn"
+                                value="right_turn">우회전</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="container2" class="container">
+
+            <div id="container2_left" class="container_left">
+
+                <div class="ecobot00011_box" id="ecobot00011_gps">
+                    <div>
+                        <p class="ecobot00011_value">위치</p>
+                        <p class="ecobot00011_value">정보</p>
+                    </div>
+                    <div class="ecobot00011_boxy">
+                        <p class="ecobot00011_t">위도</p>
+                        <p class="ecobot00011_value"
+                            id="ecobot00011_latitude_value">0.0</p>
+                    </div>
+                    <div class="ecobot00011_boxy">
+                        <p class="ecobot00011_t">경도</p>
+                        <p class="ecobot00011_value"
+                            id="ecobot00011_longitude_value">0.0</p>
+                    </div>
+                    <div>
+                        <p class="ecobot00011_value">로봇 방위</p>
+                        <div class="ecobot00011_box">
+                            <div class="ecobot00011_boxy">
+                                <p class="ecobot00011_t">Bearing</p>
+                                <p class="ecobot00011_value">0.0</p>
+                            </div>
+                            <div class="ecobot00011_boxy">
+                                <p class="ecobot00011_t">거리</p>
+                                <p class="ecobot00011_value">0.0</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="ecobot00011_box">
+                    <div class="compass" id="ecobot00011-compass">
+                        <div class="arrow bearing-arrow"
+                            id="ecobot00011-bearing"></div>
+                        <div class="arrow yaw-arrow" id="ecobot00011-yaw"></div>
+                        <span class="direction-label north">북</span>
+                        <span class="direction-label east">동</span>
+                        <span class="direction-label south">남</span>
+                        <span class="direction-label west">서</span>
+                    </div>
+                </div>
+
+                <div class="ecobot00011_box">
+                    <div id="ecobot00011_map"></div>
+                </div>
+
+            </div>
+
+            <div class="container_right">
+
+                <div class="ecobot00011_box">
+                    <p class="ecobot00011_value">수질 그래프</p>
+                </div>
+
+                <div class="ecobot00011_box">
+                    <div class="ecobot00011_boxy">
+                        <p class="ecobot00011_t">수온</p>
+                        <p class="ecobot00011_value">9.28</p>
+                    </div>
+                    <div class="ecobot00011_boxy">
+                        <p class="ecobot00011_t">남조류</p>
+                        <p class="ecobot00011_value">9.28</p>
+                    </div>
+                    <div class="ecobot00011_boxy">
+                        <p class="ecobot00011_t">클로로필a</p>
+                        <p class="ecobot00011_value">9.28</p>
+                    </div>
+                    <div class="ecobot00011_boxy">
+                        <p class="ecobot00011_t">전기전도도</p>
+                        <p class="ecobot00011_value">9.28</p>
+                    </div>
+                    <div class="ecobot00011_boxy">
+                        <p class="ecobot00011_t">산성도</p>
+                        <p class="ecobot00011_value">9.28</p>
+                    </div>
+                    <div class="ecobot00011_boxy">
+                        <p class="ecobot00011_t">탁도</p>
+                        <p class="ecobot00011_value">9.28</p>
+                    </div>
+                    <div class="ecobot00011_boxy">
+                        <p class="ecobot00011_t">용존산소농도</p>
+                        <p class="ecobot00011_value">9.28</p>
+                    </div>
+                </div>
+
+                <div id="water_quality_graph" class="ecobot00011_box">
+                    <div style="width: 100%; max-width: 400px;">
+                        <div class="water_quality_graph_bar"
+                            style="background-color: #4CAF50; width: 100%; height: 20px;"></div>
+                        <div class="water_quality_graph_bar"
+                            style="background-color: #2196F3; width: 50%; height: 20px;"></div>
+                        <div class="water_quality_graph_bar"
+                            style="background-color: #f44336; width: 30%; height: 20px;"></div>
+                        <div class="water_quality_graph_bar"
+                            style="background-color: #f44336; width: 30%; height: 20px;"></div>
+                        <div class="water_quality_graph_bar"
+                            style="background-color: #f44336; width: 30%; height: 20px;"></div>
+                        <div class="water_quality_graph_bar"
+                            style="background-color: #f44336; width: 30%; height: 20px;"></div>
+                        <div class="water_quality_graph_bar"
+                            style="background-color: #f44336; width: 30%; height: 20px;"></div>
+                    </div>
+                    <div>
+                        <p class="ecobot00011_t">수온</p>
+                        <p class="ecobot00011_t">수온</p>
+                        <p class="ecobot00011_t">수온</p>
+                        <p class="ecobot00011_t">수온</p>
+                        <p class="ecobot00011_t">수온</p>
+                        <p class="ecobot00011_t">수온</p>
+                        <p class="ecobot00011_t">수온</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="container3" class="container">
+            <div class="container_right" style="width:100%;">
+                <img class="container3_img" src="../img/ecobot500.jpg">
+                <img class="container3_img" src="../img/ecowing.jpg">
+                <img class="container3_img" src="../img/ecostation.png">
+            </div>
+        </div>
+        <script src="../js/dash1.js"></script>
+        <script src="../js/compass.js"></script>
+        <script src="../js/map.js"></script>
+        <script async defer
+            src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=gqmuzc8c4o&submodules=panorama&callback=initMap">
+        </script> </body>
+</html>
