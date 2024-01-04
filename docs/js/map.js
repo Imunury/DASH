@@ -35,8 +35,8 @@
         const robotId = 'ecobot00011'; // 이 로봇 ID는 실제 사용하는 로봇 ID로 변경해야 합니다.
         fetchTracks(robotId); // 로봇 ID를 인자로 전달
 
-        wss_00008_tracking_map = new WebSocket(`wss://125.136.64.124:24104/${robotId}`);
-        wss_00008_tracking_map.onmessage = function (event) {
+        ws_00008_tracking_map = new WebSocket(`ws://125.136.64.124:24104/${robotId}`);
+        ws_00008_tracking_map.onmessage = function (event) {
             const msg = JSON.parse(event.data);
 
             const gpsMessage = JSON.parse(event.data);
