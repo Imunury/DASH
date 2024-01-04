@@ -53,7 +53,7 @@
             document.getElementById('ecobot00011_bat_Temp').textContent = mpptData[4];
             document.getElementById('ecobot00011_dev_Temp').textContent = mpptData[5];
             document.getElementById('ecobot00011_bat_Soc').textContent = mpptData[6];
-            //                document.getElementById('ecobot00011_bat').textContent = mpptData[9];
+            //document.getElementById('ecobot00011_bat').textContent = mpptData[9];
         }
 
         // if (statusMessage.other_values) {
