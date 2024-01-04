@@ -3,9 +3,9 @@
 (function () {
 
     const robotId = "ecobot00011"
-    const ecobot00011_mon_ws = new WebSocket(`ws://125.136.64.124:24104/${robotId}`);
+    const ecobot00011_mon_wss = new WebSocket(`wss://125.136.64.124:24104/${robotId}`);
 
-    ecobot00011_mon_ws.onmessage = function (event) {
+    ecobot00011_mon_wss.onmessage = function (event) {
         const msg = JSON.parse(event.data);
 
         const statusMessage = JSON.parse(event.data);
